@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apollo!</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="apollo.css" rel="stylesheet">
+  </head>
+  <body>
+    <form class="form-signin" role="form" name="siginIn">
+      <h2 class="form-signin-heading">Please sign in</h2>
+      <input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+      <input type="password" name="password" class="form-control" placeholder="Password" required>
+      <label class="checkbox">
+        <input type="checkbox" name="remember"> Remember me
+      </label>
+      <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign in">
+    </form>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      var ipc = require('ipc');
+      console.log(ipc.sendSync('authenticate', 'wiliamsouza83@gmail.com', '12345'));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "apollo-desktop",
+  "version": "0.1.0",
+  "description": "Apollo desktop",
+  "main": "apollo.js",
+  "dependencies": {
+    "unirest": "0.2.6",
+    "bower": ""
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wiliam Souza <wiliamsouza83@gmail.com>",
+  "license": "BSD"
+}
